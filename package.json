@@ -1,11 +1,28 @@
 {
   "name": "vue-number-spinner",
+  "version": "0.0.1",
   "description": "Number spinner component for Vue.js.",
-  "author": "xiaoluoboding <xiaoluoboding@gmail.com>",
+  "main": "dist/vue-number-spinner.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.config.prod.js",
+    "prepublish": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoluoboding/vue-number-spinner.git"
+  },
+  "keywords": [
+    "vue",
+    "number",
+    "spinner"
+  ],
+  "author": "xiaoluoboding <xiaoluoboding@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiaoluoboding/vue-number-spinner/issues"
+  },
+  "homepage": "https://github.com/xiaoluoboding/vue-number-spinner",
   "dependencies": {
     "vue": "^1.0.0",
     "babel-runtime": "^6.0.0"
@@ -20,6 +37,7 @@
     "css-loader": "^0.23.0",
     "file-loader": "^0.8.4",
     "json-loader": "^0.5.4",
+    "unminified-webpack-plugin": "^1.1.0",
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.0.0",

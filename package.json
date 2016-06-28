@@ -1,6 +1,6 @@
 {
-  "name": "vws-demo",
-  "description": "A Vue.js project",
+  "name": "vue-number-spinner",
+  "description": "Number spinner component for Vue.js.",
   "author": "xiaoluoboding <xiaoluoboding@gmail.com>",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",

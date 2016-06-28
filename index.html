@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>vue-number-spinner demo page</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1><span v-text="title"></span></h1>
+    <a href="#!" class="button">Source on GitHub</a>
+    <div class="demo-container">
+      <section class="demo-desc">
+        <!-- <p>基于Vue.js的number spinner组件，支持按钮点击、键盘<kbd>↑</kbd><kbd>↓</kbd>、鼠标滚轮事件。</p> -->
+        <p>Number spinner component for Vue.js, Easy to use.</p>
+        <p>Support button click、keyboard <kbd>↑</kbd><kbd>↓</kbd> and mousewheel Event.</p>
+      </section>
+      <hr>
+      <section class="demo-list">
+        <div class="spinner-group number">
+          <label class="label-control">Step By 1:</label>
+          <vue-number-spinner :min=0 :max=10 :step=1></vue-number-spinner>
+        </div>
+        <div class="spinner-group number">
+          <label class="label-control">Step By 5:</label>
+          <vue-number-spinner :min=0 :max=100 :step=5></vue-number-spinner>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/vue/1.0.24/vue.min.js"></script>
+  <script src="vue-number-spinner.min.js"></script>
+  <script type="text/javascript">
+  new Vue({
+    el: 'body',
+    data: {
+        title: 'vue-number-spinner'
+    },
+    components: {
+      // 'vue-number-spinner': window['vue-number-spinner']
+      'vue-number-spinner': window['vue-number-spinner']
+    }
+  })
+  </script>
+</body>
+</html>
